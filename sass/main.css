@@ -12,66 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  padding: 3rem;
-  line-height: 1.7;
   color: #777;
-}
-
-.header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  height: 95vh;
-  width: 100%;
-  background-position: top;
-  background-size: cover;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.header-primary {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
-}
-
-.header-primary--main {
-  display: block;
-  font-weight: 400;
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
-  -webkit-animation: moveInRight 2s ease;
-          animation: moveInRight 2s ease;
-}
-
-.header-primary--sub {
-  display: block;
-  font-weight: 700;
-  font-size: 2rem;
-  letter-spacing: 1.75rem;
-  -webkit-animation: moveInLeft 2s ease;
-          animation: moveInLeft 2s ease;
 }
 
 @-webkit-keyframes moveInRight {
@@ -152,6 +93,37 @@ body {
   }
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 3rem;
+  line-height: 1.7;
+}
+
+.header-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.header-primary--main {
+  display: block;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 3.5rem;
+  -webkit-animation: moveInRight 2s ease;
+          animation: moveInRight 2s ease;
+}
+
+.header-primary--sub {
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.75rem;
+  -webkit-animation: moveInLeft 2s ease;
+          animation: moveInLeft 2s ease;
+}
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -194,7 +166,7 @@ body {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   border-radius: 10rem;
@@ -212,5 +184,36 @@ body {
           animation: moveInButton 0.75s ease-out 2s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  height: 95vh;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
