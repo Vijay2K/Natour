@@ -124,6 +124,34 @@ body {
           animation: moveInLeft 2s ease;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  letter-spacing: 0.2rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg);
+          transform: skewY(2deg) skewX(15deg);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-buttom-8 {
+  margin-bottom: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -188,7 +216,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
   color: black;
 }
@@ -204,7 +231,6 @@ body {
 }
 
 [class^="col-"] {
-  background-color: orangered;
   float: left;
 }
 
@@ -265,5 +291,11 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 /*# sourceMappingURL=main.css.map */
